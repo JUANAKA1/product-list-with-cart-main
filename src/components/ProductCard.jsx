@@ -1,3 +1,6 @@
+import iconCart from "/public/assets/images/icon-add-to-cart.svg"
+import iconDecrement from "/public/assets/images/icon-decrement-quantity.svg";
+import iconIncrement from "/public/assets/images/icon-increment-quantity.svg";
 // import { useState } from "react";
 import { useCartStore } from "../store/Cart.Store";
 
@@ -66,7 +69,7 @@ const ProductCard = ({ image, name, category, price }) => {
           className="bg-Rose-50 border-2 border-Rose-300 w-40 rounded-full flex justify-center gap-2 p-3 absolute top-[188px] left-0 right-0 mx-auto cursor-pointer hover:border-Red transition-colors"
         >
           <img
-            src="/public/assets/images/icon-add-to-cart.svg"
+            src={iconCart}
             alt="icon add to cart"
           />
           <span>Add to Cart</span>
@@ -76,14 +79,14 @@ const ProductCard = ({ image, name, category, price }) => {
           <img
             onClick={subtractOne}
             className="border border-Rose-50 size-[18px] rounded-full p-1 "
-            src="/public/assets/images/icon-decrement-quantity.svg"
+            src={iconDecrement}
             alt="icon decrement quantity"
           />
           <p className="text-Rose-50">{quantity}</p>
           <img
             onClick={addOne}
             className="border border-Rose-50 size-[18px] rounded-full p-1 "
-            src="/public/assets/images/icon-increment-quantity.svg"
+            src={iconIncrement}
             alt="icon increment quantity"
           />
         </div>

@@ -1,3 +1,4 @@
+import iconConfirmed from "/public/assets/images/icon-order-confirmed.svg"
 import CartButton from "./CartButton";
 import CartConfirmItem from "./CartConfirmItem";
 import CartTotal from "./CartTotal";
@@ -16,7 +17,7 @@ const CartConfirmation = () => {
     >
       <div className="bg-white w-[375px] py-10 px-6 rounded-lg md:w-[600px]">
         <img
-          src="/public/assets/images/icon-order-confirmed.svg"
+          src={iconConfirmed}
           alt="icon order confirmed"
         />
         <h2 className="text-[2.5rem] font-bold ">Order Confirmed</h2>

@@ -1,3 +1,5 @@
+import iconRemove from "/public/assets/images/icon-remove-item.svg"
+
 import { useCartStore } from "../store/Cart.Store";
 
 const CartItem = (props) => {
@@ -21,7 +23,7 @@ const CartItem = (props) => {
         <img
           onClick={() => deleteItemCart(name)}
           className="border border-Rose-300 rounded-full p-0.5 cursor-pointer"
-          src="/public/assets/images/icon-remove-item.svg"
+          src={iconRemove}
           alt="icon remove"
         />
       </div>

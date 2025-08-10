@@ -1,3 +1,4 @@
+import iconCarbon from "/public/assets/images/icon-carbon-neutral.svg"
 import CartButton from "./CartButton";
 import CartItem from "./CartItem";
 import CartTotal from "./CartTotal";
@@ -17,7 +18,7 @@ const Cart = () => {
       <CartTotal />
       <div className="bg-Rose-100 flex justify-center items-center gap-2 rounded-lg p-4 mb-6">
         <img
-          src="/public/assets/images/icon-carbon-neutral.svg"
+          src={iconCarbon}
           alt="icon carbon neutral"
         />
         <p className="text-sm">
